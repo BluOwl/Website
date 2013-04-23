@@ -284,6 +284,13 @@ a:hover{color:inherit}
     font-size: 15px;
     margin: 0 0 0 0;
 }
+#whoweare hr {
+    margin-top: 0;
+    border: 0;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 40px;
+}
 
 
 
@@ -364,7 +371,7 @@ a:hover{color:inherit}
     margin-top: 0;
     border: 0;
     height: 1px;
-    background: #333;
+    background: #333 !important;
 }
 .project-text-left h1 {
     margin-top: 0 !important;
@@ -377,9 +384,15 @@ a:hover{color:inherit}
     margin-top: 0;
     border: 0;
     height: 1px;
-    background: #333;
+    background: #333 !important;
 }
 
+#whatwedo hr {
+    margin-top: 0;
+    border: 0;
+    height: 2px;
+    background: #fff;
+}
 
 
 
@@ -473,10 +486,15 @@ a:hover{color:inherit}
 #contactus-icons {
     width: 100%;
     font: 80px 'icomoon', Arial, sans-serif;
-    letter-spacing: 20px;
     text-align: center;
 }
-
+#contactus-icons a {
+    width: 100%;
+    font: 80px 'icomoon', Arial, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
 
 
 
