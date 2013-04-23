@@ -28,6 +28,47 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'LaneNarrowRegular';
+    src: url('fonts/LANENAR_-webfont.eot');
+    src: url('fonts/LANENAR_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LANENAR_-webfont.woff') format('woff'),
+         url('fonts/LANENAR_-webfont.ttf') format('truetype'),
+         url('fonts/LANENAR_-webfont.svg#LaneNarrowRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LaneUpperRegular';
+    src: url('fonts/LANEUP__-webfont.eot');
+    src: url('fonts/LANEUP__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LANEUP__-webfont.woff') format('woff'),
+         url('fonts/LANEUP__-webfont.ttf') format('truetype'),
+         url('fonts/LANEUP__-webfont.svg#LaneUpperRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LanePoshRegular';
+    src: url('fonts/LANEPOSH-webfont.eot');
+    src: url('fonts/LANEPOSH-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LANEPOSH-webfont.woff') format('woff'),
+         url('fonts/fonts/LANEPOSH-webfont.ttf') format('truetype'),
+         url('fonts/LANEPOSH-webfont.svg#LanePoshRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,600,700,300);
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot');
+    src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.woff') format('woff'),
+        url('fonts/icomoon.ttf') format('truetype'),
+        url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
@@ -40,26 +81,35 @@ html, body {
     min-width: 100%;
     width: 100%;
 }
-#header {
-    /*position: absolute;*/
-    height: 400px;
-    width: 100%;
-    background-image:url('bck.png');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    z-index:1;
+
+a {
+    text-decoration: none;
+
 }
+a:link{color:inherit}
+a:active{color:inherit}
+a:visited{color:inherit}
+a:hover{color:inherit}
+
+
+/*                                       
+ _   _ _____    _    ____  _____ ____  
+| | | | ____|  / \  |  _ \| ____|  _ \ 
+| |_| |  _|   / _ \ | | | |  _| | |_) |
+|  _  | |___ / ___ \| |_| | |___|  _ < 
+|_| |_|_____/_/   \_|____/|_____|_| \_\
+
+*/                                     
+
+
+
 #header-wrapper {
     width: 750px;
-    height: 100%;
+    height: 306px;
     /*padding-left: 100px;*/
     margin-left: auto;
     margin-right: auto;
+    margin-top: 55px;
 }
 #header-logo {
     float: left;
@@ -67,15 +117,16 @@ html, body {
     background-repeat:no-repeat;
     background-position: left;
     background-origin: content-box;
-    height: 100%;
+    height: 306px;
     width: 250px;
 }
 #header-content {
-    color: white;
-    width: 450px;
     float: left;
+    width: 450px;
+    color: white;
+    height: 100%;
     padding-left: 50px;
-    padding-top: 20px;
+    margin-top: -28px;
 }
 #header-content h1 {
     font: 60px/68px 'BebasNeueRegular', Arial, sans-serif;
@@ -97,108 +148,370 @@ html, body {
     letter-spacing: 0;
 }
 
-#banner {
-    background-image:url('banner.png');
+#header {
+    background-image:url('bigback.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-    height: 126px;
-    margin-top: -126px;
-    z-index: 3;
-}
 
-
-#mainbody {
     overflow-x: hidden;
-    height: 800px;
+    height: 500px;
     width: 100%;
     background-color: #FFFEF5;
 }
-#iconholder {
-    background-image:url('grainbck.png'); 
+
+
+/*
+ _   _    ___     _____ ____    _  _____ ___ ___  _   _ 
+| \ | |  / \ \   / |_ _/ ___|  / \|_   _|_ _/ _ \| \ | |
+|  \| | / _ \ \ / / | | |  _  / _ \ | |  | | | | |  \| |
+| |\  |/ ___ \ V /  | | |_| |/ ___ \| |  | | |_| | |\  |
+|_| \_/_/   \_\_/  |___\____/_/   \_|_| |___\___/|_| \_|
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+#mainbody {
+    height: 2300px;
     width: 100%;
-    height: 300px;
-    box-shadow:inset 0  8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
+    background-color: white;
+    margin-top: -40px;
 }
-#innericonholder{
-    width: 800px;
+
+
+
+#whoweare {
+    padding-top: 100px;
+    height: 800px;
+    background-color: #aeacba;
+}
+#whoweare h1 {
+    margin-top: -70px;
+    font: 50px 'LaneUpperRegular', Arial, sans-serif;
+    letter-spacing: 0;
+    text-align: center;
+}
+#whoweare-triangle {
+    margin-bottom: 100px;
+    margin-right: auto;
+    margin-left:  auto;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 100px 175px 0 175px;
+    border-color: #aeacba transparent transparent transparent;
+}
+#whoweare-text-container {
+    width: 100%;
     height: 200px;
+    margin-top: 50px;
+}
+#whoweare-text-container-inner {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    width: 660px;
+    height: 100%;
     margin-right: auto;
     margin-left: auto;
 }
-.icon{
+.whoweare-pic-container {
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.whoweare-pic-container-inner {
+    height: 200px;
+    width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.whoweare-pic {
     position: relative;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
     height: 200px;
     width: 200px;
-    background-image:url('invader_bnw.png');
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    float: left;
-    margin-left: 50px;
+    background-image:url('placeholder.png');
 }
-.iconcolor{
+.whoweare-circle {
+    width: 200px;
+    height: 200px;
     position: absolute;
-
+    border-radius: 100px 100px 100px 100px;
+    background-color: #0f75bc;
     opacity: 0;
     transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s ease-in-out;
-
-    height: 200px;
-    width: 200px;
-    background-image:url('invader_color.png');
-    background-repeat: no-repeat;
-
 }
-.iconcolor:hover{
+.whoweare-circle:hover {
+    width: 200px;
+    height: 200px;
     position: absolute;
-
-    opacity: 1.0;
+    border-radius: 100px 100px 100px 100px;
+    background-color: #0f75bc;
+    opacity: .8;
     transition: opacity .55s ease-in-out;
     -moz-transition: opacity .55s ease-in-out;
     -webkit-transition: opacity .55s ease-in-out;
-
-    height: 200px;
-    width: 200px;
-    background-image:url('invader_color.png');
-    background-repeat: no-repeat;
-
 }
-.iconinfo{
-    position: absolute;
-    display: block;
-    height: 10px;
-    width: 10px;
-    background-color: #00f;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    border-radius: 5px;
+.whoweare-circle h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin: 75px 0 0 0;
+}
+.whoweare-circle h3 {
+    text-align: center;
+    font-family: "georgia";
+    font-size: 15px;
+    margin: 0 0 0 0;
 }
 
-.arrow-up {
+
+
+
+
+
+
+
+
+
+#whatwedo {
+    height: 850px;
+    background-color: #0f75bc;
+}
+#whatwedo h1 {
     margin-top: -50px;
-    margin-left: 100px;
+    font: 50px 'LaneUpperRegular', Arial, sans-serif;
+    letter-spacing: 0;
+    text-align: center;
+}
+#whatwedo-triangle {
+    margin-bottom: 100px;
+    margin-right: auto;
+    margin-left:  auto;
     width: 0px;
     height: 0px;
     border-style: solid;
-    border-width: 0 50px 50px 50px;
-    /*border-color: transparent transparent #ffffff transparent;*/
-    border-color: transparent transparent black transparent;
+    border-width: 100px 175px 0 175px;
+    border-color: #0f75bc transparent transparent transparent;
+}
+.project-pic-container {
+    height: 200px;
+    width: 100%;
+    margin-top: 60px;
+}
+.project-pic-container-inner {
+    height: 200px;
+    width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.project-pic-left {
+    float: left;
+    height: 200px;
+    width: 200px;
+    background-image:url('adhesion.png');
+}
+.project-pic-right {
+    float: right;
+    height: 200px;
+    width: 200px;
+    background-image:url('adhesion.png');
+}
+.project-text-left {
+    float: left;
+    height: 200px;
+    width: 440px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.project-text-right {
+    float: right;
+    height: 200px;
+    width: 440px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.project-text-right h1 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    text-align: left !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 25px !important;
+}
+.project-text-right hr {
+    margin-top: 0;
+    border: 0;
+    height: 1px;
+    background: #333;
+}
+.project-text-left h1 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    text-align: left !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 25px !important;
+}
+.project-text-left hr {
+    margin-top: 0;
+    border: 0;
+    height: 1px;
+    background: #333;
 }
 
 
+
+
+
+
+
+
+
+
+#button-container {
+    height: 64px;
+    width: 100%;
+    margin-top: 50px;
+}
+#button-container-inner {
+    margin-left: auto;
+    margin-right: auto;
+    height: 64px;
+    width: 374px;
+}
+.button {
+    display: inline-block;
+    padding: 22px 39px 20px;
+    border: 1px solid #494949;
+    border-radius: 5px;
+
+    background-color: #555;
+    background-image: linear-gradient(0deg, #525252, dimgray);
+
+    box-shadow: 
+        inset 0 1px 0 0 rgba(255,255,255,0.4),
+        inset 0 0 5px 0 rgba(255,255,255,0.2),
+        inset 0 67px 67px -40px rgba(255,255,255,0),
+        0 2px 0 0 #2e2e2e,
+        0 3px 6px 0 rgba(0,0,0,0.4);
+    transition: 
+        box-shadow 230ms ease-in-out,
+        transform 230ms ease-in-out,
+        border-color 230ms ease-in-out;
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 23px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.27);
+
+    vertical-align: middle;
+    cursor: pointer;
+}
+.button:hover {
+    border-color: rgba(73,73,73,0.5);
+    box-shadow: 
+        inset 0 1px 0 0 rgba(255,255,255,0.6),
+        inset 0 0 5px 0 rgba(255,255,255,0.2),
+        inset 0 67px 67px -40px rgba(255,255,255,0.3),
+        0 2px 0 0 #2e2e2e,
+        0 3px 8px 0 rgba(0,0,0,0.4);
+}
+.button:active {
+    box-shadow: 
+        inset 0 1px 0 0 rgba(255,255,255,0),
+        inset 0 1px 7px -1px rgba(0,0,0,0.35),
+        inset 0 67px 67px -40px rgba(255,255,255,0),
+        0 2px 0 0 #2e2e2e,
+        0 3px 8px 0 rgba(0,0,0,0);
+    transform: translate(0px, 2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+#contactus {
+    height: 500px;
+}
+#contactus h1 {
+    margin-top: -50px;
+    font: 50px 'LaneUpperRegular', Arial, sans-serif;
+    letter-spacing: 0;
+    text-align: center;
+}
+#contactus-icons {
+    width: 100%;
+    font: 80px 'icomoon', Arial, sans-serif;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+/*
+#mainbody h1 {
+    font: 36px 'LaneUpperRegular', Arial, sans-serif;
+    letter-spacing: 0;
+    margin-top: -10px;
+    text-align: center;
+    white-space: pre;
+}
+
+
+        /*p.style1 {font: 18px/27px 'LaneNarrowRegular', Arial, sans-serif;}
+        p.style2 {font: 18px/27px 'LaneUpperRegular', Arial, sans-serif;}
+        p.style3 {font: 18px/27px 'LanePoshRegular', Arial, sans-serif;}*/
+
+#round {
+    margin-top: -126px;
+    height: 126px;
+    background-image:url('banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 #footer {
     height: 30px;
 }
 #footer-content {
-    border: 1px solid magenta;
     height: 25px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
     padding: 3px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
 }
