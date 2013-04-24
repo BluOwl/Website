@@ -143,7 +143,7 @@ a:hover{color:inherit}
     font: 19px 'ArmataRegular', Arial, sans-serif;
 }
 #header-content a {
-    font-weight: 10;
+    font-weight: 10px;
     font: 20px 'PacificoRegular', Arial, sans-serif;
     letter-spacing: 0;
 }
@@ -161,6 +161,34 @@ a:hover{color:inherit}
     width: 100%;
     background-color: #FFFEF5;
 }
+
+
+
+/*                  
+ ____   ___  ______   __
+| __ ) / _ \|  _ \ \ / /
+|  _ \| | | | | | \ V / 
+| |_) | |_| | |_| || |  
+|____/ \___/|____/ |_|  
+                        
+*/
+
+
+#mainbody {
+    height: 2100px;
+    width: 100%;
+    background-color: white;
+    margin-top: -40px;
+}
+
+/*                                                           
+__        ___   _  ___   __        _______      _    ____  _____ 
+\ \      / | | | |/ _ \  \ \      / | ____|    / \  |  _ \| ____|
+ \ \ /\ / /| |_| | | | |  \ \ /\ / /|  _|     / _ \ | |_) |  _|  
+  \ V  V / |  _  | |_| |   \ V  V / | |___   / ___ \|  _ <| |___ 
+   \_/\_/  |_| |_|\___/     \_/\_/  |_____| /_/   \_|_| \_|_____|
+*/
+
 
 #trapezoid-left {
     margin-top: -110px;
@@ -181,37 +209,6 @@ a:hover{color:inherit}
     width: 50%;
     margin-right: -175px;
 }
-
-
-/*
- _   _    ___     _____ ____    _  _____ ___ ___  _   _ 
-| \ | |  / \ \   / |_ _/ ___|  / \|_   _|_ _/ _ \| \ | |
-|  \| | / _ \ \ / / | | |  _  / _ \ | |  | | | | |  \| |
-| |\  |/ ___ \ V /  | | |_| |/ ___ \| |  | | |_| | |\  |
-|_| \_/_/   \_\_/  |___\____/_/   \_|_| |___\___/|_| \_|
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-#mainbody {
-    height: 2100px;
-    width: 100%;
-    background-color: white;
-    margin-top: -40px;
-}
-
-
-
 #whoweare {
     height: 900px;
     background-color: #aeacba;
@@ -311,12 +308,13 @@ a:hover{color:inherit}
 }
 
 
-
-
-
-
-
-
+/*
+__        ___   _    _  _____  __        _______   ____   ___  
+\ \      / | | | |  / \|_   _| \ \      / | ____| |  _ \ / _ \ 
+ \ \ /\ / /| |_| | / _ \ | |    \ \ /\ / /|  _|   | | | | | | |
+  \ V  V / |  _  |/ ___ \| |     \ V  V / | |___  | |_| | |_| |
+   \_/\_/  |_| |_/_/   \_|_|      \_/\_/  |_____| |____/ \___/ 
+*/
 
 
 #whatwedo {
@@ -345,43 +343,53 @@ a:hover{color:inherit}
     margin-top: 60px;
 }
 .project-pic-container-inner {
-    height: 850px;
-    width: 930px;
+    height: 300px;
+    width: 960px;
     margin-right: auto;
     margin-left: auto;
 }
 .project-pic-container-inner-inner {
     float: left;
-    height: 850px;
-    width: 300px;
+    height: 250px;
+    width: 230px;
     margin-left: 5px;
     margin-right: 5px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+.project-pic-container-inner-inner:hover {
+background-color: #D6D6D6;
 }
 .project-pic {
+    font: 40px 'icomoon', Arial, sans-serif;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    height: 200px;
+    margin-top: 10px;
+    height: 40px;
     width: 200px;
-    background-image:url('adhesion.png');
+    /*background-image:url('adhesion.png');*/
 }
 .project-text {
+    text-align: center;
     margin-top: 20px;
-    height: 650px;
-    width: 300px;
+    height: 175px;
+    width: 210px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    margin-right: 20px;
+    font-size: 18px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .project-text hr {
     margin-top: 0;
     border: 0;
     height: 1px;
-    background: #333 !important;
+    background: #0f75bc !important;
 }
 .project-text h1 {
+    text-align: center;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-    text-align: left !important;
     font-family: 'Open Sans', sans-serif !important;
     font-size: 25px !important;
 }
@@ -393,14 +401,39 @@ a:hover{color:inherit}
     background: #fff;
 }
 
+/*
+  ____ ___  _   _ _____  _    ____ _____   _   _ ____  
+ / ___/ _ \| \ | |_   _|/ \  / ___|_   _| | | | / ___| 
+| |  | | | |  \| | | | / _ \| |     | |   | | | \___ \ 
+| |__| |_| | |\  | | |/ ___ | |___  | |   | |_| |___) |
+ \____\___/|_| \_| |_/_/   \_\____| |_|    \___/|____/ 
+
+*/
 
 
 
 
-
-
-
-
+#contactus {
+    height: 500px;
+}
+#contactus h1 {
+    margin-top: -50px;
+    font: 50px 'LaneUpperRegular', Arial, sans-serif;
+    letter-spacing: 0;
+    text-align: center;
+}
+#contactus-icons {
+    width: 100%;
+    font: 80px 'icomoon', Arial, sans-serif;
+    text-align: center;
+}
+#contactus-icons a {
+    width: 100%;
+    font: 80px 'icomoon', Arial, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
 #button-container {
     height: 64px;
     width: 100%;
@@ -463,64 +496,14 @@ a:hover{color:inherit}
     transform: translate(0px, 2px);
 }
 
-
-
-
-
-
-
-
-
-
-
-#contactus {
-    height: 500px;
-}
-#contactus h1 {
-    margin-top: -50px;
-    font: 50px 'LaneUpperRegular', Arial, sans-serif;
-    letter-spacing: 0;
-    text-align: center;
-}
-#contactus-icons {
-    width: 100%;
-    font: 80px 'icomoon', Arial, sans-serif;
-    text-align: center;
-}
-#contactus-icons a {
-    width: 100%;
-    font: 80px 'icomoon', Arial, sans-serif;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-}
-
-
-
-
-
 /*
-#mainbody h1 {
-    font: 36px 'LaneUpperRegular', Arial, sans-serif;
-    letter-spacing: 0;
-    margin-top: -10px;
-    text-align: center;
-    white-space: pre;
-}
+ _____ ___   ___ _____ _____ ____  
+|  ___/ _ \ / _ |_   _| ____|  _ \ 
+| |_ | | | | | | || | |  _| | |_) |
+|  _|| |_| | |_| || | | |___|  _ < 
+|_|   \___/ \___/ |_| |_____|_| \_\
 
-
-        /*p.style1 {font: 18px/27px 'LaneNarrowRegular', Arial, sans-serif;}
-        p.style2 {font: 18px/27px 'LaneUpperRegular', Arial, sans-serif;}
-        p.style3 {font: 18px/27px 'LanePoshRegular', Arial, sans-serif;}*/
-
-#round {
-    margin-top: -126px;
-    height: 126px;
-    background-image:url('banner.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
+*/
 
 #footer {
     height: 30px;
