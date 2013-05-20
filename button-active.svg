@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="99px" height="48px" viewBox="0 0 99 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,0 L0,48 L75.0032827,48 C88.2563037,48 99,37.2577484 99,24 L99,24 C99,10.745166 88.2640463,0 75.0032827,0 L0,0 Z M0,0" id="Rectangle 1" fill="#A9A9A9"></path>
+        <path d="M82.6243782,10.440593 C83.4020544,9.66291674 84.6644829,9.66448286 85.4413876,10.4413876 L85.4087496,10.4087496 C86.1868647,11.1868647 86.179828,12.4554752 85.4082804,13.2270229 L74.6353032,24 L85.4082804,34.7729771 C86.1866546,35.5513514 86.1856543,36.8143457 85.4087496,37.5912504 L85.4413876,37.5586124 C84.6632725,38.3367275 83.3989103,38.3339391 82.6243782,37.559407 L70.4730786,25.4081074 C69.6954023,24.6304312 69.6985465,23.3664247 70.4730786,22.5918926 L82.6243782,10.440593 Z M82.6243782,10.440593" id="Rectangle 2" fill="#434141"></path>
+    </g>
+</svg>
