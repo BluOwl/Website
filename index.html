@@ -1,38 +1,94 @@
 <!doctype html>
 <html>
-    
+
 <head>
 <title>BluAdmin Panel &#xF011; </title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="bluowl.css">
+
+
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.js'></script>
+
+<script type='text/javascript'> 
+$(window).load(function(){
+$('div.menu-button').click(function() {
+    $(this).toggleClass('menu-button-active');
+    $('div.content').toggleClass('content-active');
+});
+
+});
+
+</script>
+
+<script type='text/javascript'>
+$(function()
+{
+    var ticker = function()
+    {
+        setTimeout(function(){
+            $('#ticker li:first').animate( {marginTop: '-100px'}, 300, function()
+            {
+                $(this).detach().appendTo('ul#ticker').removeAttr('style');
+            });
+            ticker();
+        }, 4000);
+    };
+    ticker();
+});
+</script>
 </head>
-    
+
 <body>
 
 
 
-<div id="bottom">
-	<div id="top"></div>
-	<div id="cutout">
+	<!--<div id="cutout">
 		<div id="logo"></div>
 	</div>
-	<div id="saying-container">
-		<div id="text-logo"></div>
-		<div id="description">
-		<p>Few have gone in search of the source of pure awesome. Some believe it's a myth, no more tangible than that sports car you'll never be able to afford. Some strive for awesome, chasing after it like the unrelinquishing childhood dream to be an astronaut someday. And more still believe awesome to be unobtainable, like the woman on the train with the purple peacoat. The one that got away. But here at BluOwl we don't go looking for awesome...</p>
-		<h1>We make awesome happen every day.</h1>
+	-->
+	<div id="top-container">
+	<div id="menu-panel"></div>
+	<div class="menu-button"></div>
+	<div class="content">
+		<div id="logo-container">
+			<div id="logo"></div>
+			<div id="text-logo"></div>
+		</div>
+		<div id="saying-container">
+		<a>WE MAKE AWESOME
+		<ul id="ticker">
+			<li><a>WEBSITES</a></li>
+			<li><a>GAMES</a></li>
+        	<li><a>BRANDS</a></li>
+        	<li><a>LOGOS</a></li>
+			<li><a>VIDEOS</a></li>
+ 		</ul>
+ 	 	</div>
+
+
+<!--
+		<div id="saying-container">
+			<div id="text-logo"></div>
+			<div id="description">
+				<p>Few have gone in search of the source of pure awesome. Some believe it's a myth, no more tangible than that sports car you'll never be able to afford. Some strive for awesome, chasing after it like the unrelinquishing childhood dream to be an astronaut someday. And more still believe awesome to be unobtainable, like the woman on the train with the purple peacoat. The one that got away. But here at BluOwl we don't go looking for awesome...</p>
+			<h1>We make awesome happen every day.</h1>
+			</div>
+		</div>
+		</div>
+-->
+	<div class="footer">
+		<div class="footer-text">
+		<p><i>Made with love by <u><a href="http://www.refractix.com">@Refractix</a></u>.</i> | © 2012 BluOwl Studios. All Rights Reserved.</p>
+		</div>
+		<div class="footer-icons">
+			<a href="http://www.youtube.com/user/BluOwlStudios"></a><a href="http://www.vimeo.com/bluowl"></a><a href="https://www.facebook.com/bluowlstudios"></a><a href="https://twitter.com/bluowlstudios"></a><a href="https://github.com/BluOwl"></a><a href="http://www.flickr.com/photos/bluowl"></a>
 		</div>
 	</div>
+
+
 </div>
-<div class="footer">
-	<div class="footer-text">
-		<p><i>Made with love by <u><a href="http://www.refractix.com">@Refractix</a></u>.</i></p>
-		<p>© 2012 BluOwl Studios. All Rights Reserved.<p>
-	</div>
-	<div class="footer-icons">
-		<a href="http://www.youtube.com/user/BluOwlStudios"></a><a href="http://www.vimeo.com/bluowl"></a><a href="https://www.facebook.com/bluowlstudios"></a><a href="https://twitter.com/bluowlstudios"></a><a href="https://github.com/BluOwl"></a><a href="http://www.flickr.com/photos/bluowl"></a>
-	</div>
 </div>
+
 
 <!--
 <div id="logo-container">

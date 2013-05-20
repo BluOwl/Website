@@ -37,10 +37,8 @@ html, body {
     overflow-x: hidden;
     margin: 0px;
     padding: 0px;
-    min-height: 100%;
-    min-width: 100%;
+    height: 100%;
     width: 100%;
-    /*background-image:url("bck.png");*/
 }
 
 a {
@@ -55,72 +53,147 @@ a:hover{color:inherit}
 
 
 
-
-#top {
-    background-color: #1a1a1a;
-    height: 200px;
-    width: 100%;
-}
-#bottom {
+#top-container {
     position: relative;
-    background-color: #cccccc;
-    height: 950px;
     width: 100%;
-    z-index: 0;
+    height: 100%;
+}
+.content {
+    position: absolute;
+    background-image: url("bck.jpg");
+    /*background-color: #cccccc;*/
+    /*height: 800px;*/
+    height: 100%;
+    width: 100%; 
+    /*border-radius: 10px 10px;*/
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.menu-button {
+    position: absolute;
+    height: 56px;
+    width: 107px;
+    background-image: url("button.svg");
+    background-repeat: no-repeat;
+    z-index: 10;
+    left: -25px;
+    top: 50px;
+    -webkit-transition: margin-left .2s ease;
+    -moz-transition: margin-left .2s ease;
+    -ms-transition: margin-left .2s ease;
+    -o-transition: margin-left .2s ease;
+    transition: margin-left .2s ease;
+}
+
+.menu-button-active {
+    background-image: url("button-active.svg");
+    margin-left: 250px;
+    -webkit-transition: margin-left .2s ease;
+    -moz-transition: margin-left .2s ease;
+    -ms-transition: margin-left .2s ease;
+    -o-transition: margin-left .2s ease;
+    transition: margin-left .2s ease;
+}
+.content-active {
+    margin-left: 250px;
+    -webkit-transition: margin-left .2s ease;
+    -moz-transition: margin-left .2s ease;
+    -ms-transition: margin-left .2s ease;
+    -o-transition: margin-left .2s ease;
+    transition: margin-left .2s ease;
+}
+
+
+#menu-panel {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    background-color: darkgray;
+    -webkit-box-shadow: inset -9px 0px 15px -10px #888;
+    box-shadow: inset -9px 0px 15px -10px #888;
+}
+#content2 {
+    height: 60px;
+    background-color: gray;
 }
 #cutout {
     position: relative;
     z-index: 1;
-    margin-top: -175px;
+    margin-top: 0px;
     width: 250px;
     height: 250px;
+    top: 50px;
     background-color: #1a1a1a;
     margin-right: auto;
     margin-left: auto;
+    margin-top: -50px;
     border-radius: 0 0 125px 125px;
 }
+#logo-container{
+    width: 828px;
+    height: 250px;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
 #logo {
-    position: relative;
+    float: left;
     background-image: url("head.png");
-    background-size: 200px 200px;
+    background-size: 250px 250px;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    top: 20px;
+    width: 250px;
+    height: 250px;
+}
+#text-logo {
+    float: left;
+    background-image: url("textlogo.png");
+    background-repeat: no-repeat;
+    background-size: 578px 250px;
+    width: 578px;
+    height: 250px;
+}
+#saying-container {
+    color: white;
+    width: 730px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
 }
-#saying-container {
+#saying-container a {
+    margin: 0 0 0 0;
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-size: 80px;
+}
+
+
+
+#imagetest {
+    border-radius: 10px 10px 0 0;
+    background-image: url("test.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 500px;
     width: 100%;
-    height: 400px;
 }
 
 
 
 
-#text-logo {
-    position: relative;
-	background-image: url("textlogo.png");
-	background-repeat: no-repeat;
-	width: 500px;
-	height: 172px;
-    top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-}
-#logo-container {
-	margin-top: 50px;
-	width: 100%;
-	height: 172px;
-}
+
+
+
+
 #description p {
 	margin-top: 50px;
 	color: black;
 	font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     font-weight: 100;
-    padding-right: 350px;
-    padding-left: 350px;
+    padding-right: 210px;
+    padding-left: 210px;
     text-align: justify;
 }
 #description h1 {
@@ -133,11 +206,12 @@ a:hover{color:inherit}
 
 .footer {
     position: absolute;
-    margin-bottom: 0px;
-    height: 60px;
+    height: 30px;
     width: 100%;
-    background-color: #333130;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0px;
 }
 .footer-text {
     float: left;
@@ -150,18 +224,51 @@ a:hover{color:inherit}
 .footer-icons {
     position: relative;
     float: right;
-    height: 60px;
-    width: 200px;
-    margin-right: 50px;
-    margin-top: 13px;
+    height: 30px;
+    width: 175px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 .footer-icons a {
     position: relative;
-    font: 30px 'icomoon', Arial, sans-serif;
+    font: 20px 'icomoon', Arial, sans-serif;
     margin-left: 5px;
     margin-right: 5px;
     color: white;
 }
 .footer-icons a:hover {
     text-shadow: 0 0 15px #0f75bc;
+}
+
+
+
+
+
+
+
+
+ul#ticker {
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+    width: 240px;
+    height: 80px;
+    top: 8px;
+    overflow: hidden;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+ 
+ul#ticker  li {
+    width: 220px;
+    height: 100px;
+        margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+ 
+ul#ticker li a {
+    display: block;
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-size: 80px;
+    color: white;
 }
