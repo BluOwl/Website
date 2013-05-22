@@ -60,7 +60,10 @@ a:hover{color:inherit}
 }
 .content {
     position: absolute;
-    background-image: url("bck.jpg");
+    background-image: url("bck.jpg");    
+    
+    
+    
     /*background-color: #cccccc;*/
     /*height: 800px;*/
     height: 100%;
@@ -133,7 +136,7 @@ a:hover{color:inherit}
     border-radius: 0 0 125px 125px;
 }
 #logo-container{
-    width: 828px;
+    width: 830px;
     height: 250px;
     margin-top: 150px;
     margin-right: auto;
@@ -148,12 +151,15 @@ a:hover{color:inherit}
     height: 250px;
 }
 #text-logo {
+    position: relative;
     float: left;
     background-image: url("textlogo.png");
     background-repeat: no-repeat;
-    background-size: 578px 250px;
-    width: 578px;
+    background-size: 580px 200px;
+    width: 580px;
     height: 250px;
+    background-position: bottom;
+    bottom: -12px
 }
 #saying-container {
     color: white;
@@ -252,17 +258,18 @@ ul#ticker {
     list-style-type: none;
     display: inline-block;
     width: 240px;
-    height: 80px;
-    top: 8px;
+    height: 64px;
+    /*height: 80px;*/
+    top: 4px;
     overflow: hidden;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
- 
+
 ul#ticker  li {
     width: 220px;
     height: 100px;
-        margin: 0 0 0 0;
+    margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
  
@@ -271,4 +278,5 @@ ul#ticker li a {
     font-family: 'BebasNeueRegular', sans-serif;
     font-size: 80px;
     color: white;
+    line-height: 73px;
 }
